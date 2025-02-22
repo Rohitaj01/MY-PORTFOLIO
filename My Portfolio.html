@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/Rohit/rohit.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./My Portfolio_files/rohit.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/Rohit/rohit.html#about">About Me</a></li>
+        <li><a href="http://127.0.0.1:5500/Rohit/rohit.html#projects">Projects</a></li>
+        <li><a href="http://127.0.0.1:5500/Rohit/rohit.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! i'm Rohit raj from patna in bihar.I'm a first-year B.Tech student specializing in Computer Science and Engineering at Parul University.
+         Currently, I'm diving deep into the fascinating world of coding and web development, learning languages like C, HTML, and CSS.
+        My passion for technology drives me to explore new concepts and stay updated with the latest trends in the tech industry.
+         When I'm not coding, you can find me tinkering with gadgets, participating in coding competitions, or collaborating on exciting projects with my peers. 
+        I'm eager to grow my skills and contribute to innovative tech solutions that can make a difference.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <b><u>My technical expertise includes:<br></u></b><br>
+        <div> 
+        ✔️Programming &amp; Scripting – C, HTML &amp; CSS <br>
+        ✔️Web Development Fundamentals (HTML, CSS,).<br>
+    
+</div></ul></section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>A responsive personal portfolio built with HTML and CSS.</p>
+    
+  </div></section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="http://127.0.0.1:5500/Rohit/rohitraj14062006@gmail.com">rohitraj14062006@gmail.com</a></p>
+  </section>
+  
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
